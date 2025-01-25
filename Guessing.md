@@ -15,6 +15,7 @@ flowchart TD
     E -->|Perfect| H[/Out Correct!/]
     H --> I([End])
 ```
+# Flowchart Summary
 Starts
 Generates a random number 1-100
 Prompts user to pick a number from 1-100
