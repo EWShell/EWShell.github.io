@@ -1,0 +1,137 @@
+body {
+    font-family: sans-serif; 
+    background-color: #fff; 
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+#task-form {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#task-form input[type="text"],
+#task-form select {
+    padding: 5px;
+    width: 98%; 
+    box-sizing: border-box;
+}
+
+.inline-group {
+    display: block;
+}
+
+#task-form button {
+    padding: 8px 12px;
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #999;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+#taskmanager {
+    padding: 5px;
+}
+
+.task-item {
+    display: block; 
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.task-info {
+    margin-bottom: 5px;
+}
+
+.task-name {
+    font-weight: normal;
+}
+
+.task-meta {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+}
+
+.task-actions {
+    margin-top: 5px;
+}
+
+.delete-btn {
+    background-color: #f00; 
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+/*Important */
+.important-task {
+    border-left: 3px solid red !important;
+    background-color: #ffebeb; 
+}
+
+/* Strikethrough */
+.completed-task .task-name,
+.completed-task .task-meta {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Grey out when done */
+.completed-task {
+    background-color: #f0f0f0;
+}
+
+/* Priority */
+.priority-High {
+    font-weight: bold;
+    color: #900;
+    background-color: #FF7759;
+}
+
+.priority-Medium {
+    color: #000;
+    background-color: #FFBF00;
+}
+
+.priority-Low {
+    color: #333;
+    background-color: #B0FF99;
+}

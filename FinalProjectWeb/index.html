@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <h2>Add New Task</h2>
+            <form id="task-form">
+                <div class="form-group">
+                    <label for="task-name">Task Name:</label>
+                    <input type="text" id="task-name" name="task-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-priority">Priority:</label>
+                    <select id="task-priority" name="task-priority">
+                        <option value="High">High</option>
+                        <option value="Medium" selected>Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+                
+                <div class="form-group inline-group">
+                    <input type="checkbox" id="is-important" name="is-important">
+                    <label for="is-important">Important</label>
+                </div>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="display-section">
+            <h2>Current Tasks</h2>
+            <div id="taskmanager">
+                <p class="no-tasks-msg">No tasks yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
